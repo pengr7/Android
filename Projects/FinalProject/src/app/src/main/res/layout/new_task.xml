@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/original_margin">
+
+    <!--头部布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/titlebar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Task"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            style="@style/original_text"/>
+        <ImageView
+            android:id="@+id/save"
+            android:src="@mipmap/save"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <!--任务标题-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/taskname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/original_margin"
+                android:background="@drawable/edittext"
+                android:hint="The Name of this Task"
+                android:gravity="center"/>
+            <EditText
+                android:id="@+id/detail"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:gravity="top"
+                android:background="@drawable/edittext"
+                android:hint="More Details About The Task"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:text="The DDL of the Task"
+                android:textSize="20sp"
+                android:layout_marginBottom="10dp"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <DatePicker
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/datePicker" />
+            <TimePicker
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/timePicker" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="110dp"
+    android:layout_height="110dp" android:background="@drawable/widgetframe">
+    <TextView
+        android:id="@+id/widgetdate"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="2016/12/12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/widgettime"
+        android:text="22:22"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/widgettitle"
+        android:text="task1"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/widgetdetail"
+        android:text="detail1"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/widgetmain"
+            android:src="@android:drawable/ic_menu_sort_by_size"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/widgetadd"
+            android:src="@android:drawable/ic_menu_add"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
